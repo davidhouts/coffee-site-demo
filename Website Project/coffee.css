@@ -1,0 +1,60 @@
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: grey;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 32px;
+}
+
+header {
+	background-image: /coffee-berries.jpg;
+	background-color: pink;
+	height: 150px;
+	padding: 4px;
+}
+
+header h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+}
+
+header h2 {
+	font-variant: small-caps;
+	text-align: center;
+	color: #fff;
+}
+
+.main_nav {
+	padding: 5px 0 5px 0;
+	text-align: center;
+	line-height: 32px;
+	background-color: brown;
+
+}
+
+ul.main_nav {
+	margin-top: 15px;
+}
+
+.main_nav li {
+	display: inline;
+	padding: 0 10px 0 10px;
+	font-size: 20px;
+}
+
+.main_nav a {
+	text-decoration: none;
+	color: #fff;
+	padding: 8px;
+	font-variant: small-caps;
+}
+
+.main_nav a:hover {
+	color: green;
+}
