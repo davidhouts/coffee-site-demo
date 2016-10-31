@@ -1,48 +1,46 @@
 body {
 	font-family: 'Arial', sans-serif;
-	background-color: #C2785F;
+	/*background-color: #C2785F;*/
+	background-image: url("images/ripe-coffee.jpg");
+	background-repeat: none;
+	background-size: cover;
 }
 
-#wrapper {
-	max-width: 960px;
-	margin: 0 auto;
-	background-color: #fff;
-	padding: 32px;
-}
-
-header {
-	background-image: url("images/coffee-berries.jpg");
-	height: 150px;
-	padding: 4px;
-}
-
-header h1 {
-	text-transform: uppercase;
-	text-align: center;
+#logo h1{
+	float: left;
+	font-weight: 400;
 	color: #fff;
-	line-height: 50px;
-}
+	margin-left: 10 px;
 
-header h2 {
-	font-variant: small-caps;
-	text-align: center;
-	color: #fff;
 }
 
 .main_nav {
-	padding: 5px 0 5px 0;
+	width: 100%;
+	padding: 10px 0 10px 0;
 	text-align: center;
 	line-height: 32px;
-	background-color: brown;
+	background-color: black;
+	opacity: .4;
 
 }
 
-ul.main_nav {
+.main_nav ul {
+	float: right;
 	margin-top: 15px;
+	display: block;
+	position: relative;
+
 }
 
-.main_nav li {
-	display: inline;
+.main_nav ul ul {
+	display: none;
+	width: 120px;
+	position: absolute;
+}
+
+.main_nav ul li {
+	display: inline-block;
+	list-style-type: none;
 	padding: 0 10px 0 10px;
 	font-size: 20px;
 }
@@ -55,7 +53,42 @@ ul.main_nav {
 }
 
 .main_nav a:hover {
-	color: green;
+	background-color: green;
+}
+
+/*.main_nav ul li ul li {
+	display: none;
+}
+
+.main_nav ul li:hover ul li {
+	display: block;
+}*/
+
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	/*background-color: #fff;*/
+	padding: 32px;
+	color:#C2785F;
+}
+
+header {
+	/*background-image: url("images/coffee-berries.jpg");*/
+	height: 150px;
+	padding: 4px;
+}
+
+header h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #D4A190;
+	line-height: 50px;
+}
+
+header h2 {
+	font-variant: small-caps;
+	text-align: center;
+	color: #fff;
 }
 
 aside.speech {
