@@ -4,54 +4,49 @@ body {
 	
 }
 
-#logo h1{
-	float: left;
-	font-weight: 400;
-	color: #F0E441;
-	margin-left: 10 px;
-	line-height: 25px;
+header .container {
+	background: #AB5538;
+}
+
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
 
 }
 
 nav {
 	width: 100%;
-	height: 50px;
-	padding: 10px 0 10px 0;
+	height: 60px;
 	text-align: center;
-	line-height: 25px;
+	line-height: 20px;
 	background-color: black;
-	opacity: .4;
-
+	opacity: .6;
 }
 
 nav ul {
 	float: right;
 	display: block;
-	position: relative;
-
-}
-
-nav ul ul {
-	display: none;
-	width: 120px;
-	position: absolute;
 }
 
 nav ul li {
 	display: inline-block;
-	list-style-type: none;
-	padding: 0 10px 0 10px;
+	padding: 0 15px 0 5px;
 	font-size: 20px;
+	
 }
 
-nav a {
+nav ul li a {
 	text-decoration: none;
 	color: #F0E441;
 	padding: 8px;
 	font-variant: small-caps;
+	display: block;
 }
 
-nav a:hover {
+nav ul li a:hover {
 	background-color: #F0E441;
 	color: #fff;
 }
@@ -62,43 +57,16 @@ nav ul li ul li {
 
 nav ul li:hover ul li {
 	display: block;
-}
-
-#wrapper {
-	max-width: 500px;
-	margin: 0 auto;
-	/*background-color: #fff;*/
-	padding: 32px;
-	
-}
-
-header {
 	background-color: black;
-	opacity: .6;
-	height: 150px;
-	padding: 4px;
 }
 
-header h2 {
-	text-transform: uppercase;
-	text-align: center;
-	color: #C40A20;
-	line-height: 50px;
-}
-
-header h3 {
-	font-variant: small-caps;
-	text-align: center;
-	color: #F0E441;
-}
-
-aside.speech {
+aside {
 	position: relative;
 	width: 200px;
 	text-align: center;
 	background-color: #F0E441;
 	color: #C40A20;
-	margin: 0 auto;
+	margin-top: 300px auto;
 	padding: 10px;
 	float: right;
 	font-family: times;
@@ -114,26 +82,33 @@ aside.speech {
 }
 
 h1 {
-	color: #DBC21F;
+	color: #F54307;
+}
+h2 {
+	color: #F54307;
 }
 
-#intro {
+h3 {
+	color: #F54307;
+}
+
+.hero-container {
 	height: 550px;
 	background-image: url("images/coffeetree.jpg");
 	background-repeat: none;
 	background-size: cover;
 }
 
-#intro p {
-	color: #F2D3C9;
-	font: times;
-	font-size: 24px;
+.body1 p {
+	color: #8F2D0D;
+	font-family: Georgia;
+	font-size: 20px;
 }
 
-#intro p a {
-	color: #DBC21F;
+.body1 p a {
+	color: #A1D490;
 }
 
-#body1 {
+.body1 {
 
 }
