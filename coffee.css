@@ -17,28 +17,37 @@ header .container {
 
 }
 
-nav {
+.hero-container {
+	width: 100%;
+	height: 550px;
+	/*background-image: url("images/coffeetree.jpg");
+	background-repeat: none;
+	background-size: cover;*/
+	position: relative;
+}
+.hero-nav {
 	width: 100%;
 	height: 60px;
 	text-align: center;
 	line-height: 20px;
 	background-color: black;
 	opacity: .6;
+	position: relative;
 }
 
-nav ul {
+.hero-nav ul {
 	float: right;
 	display: block;
 }
 
-nav ul li {
+.hero-nav ul li {
 	display: inline-block;
 	padding: 0 15px 0 5px;
 	font-size: 20px;
 	
 }
 
-nav ul li a {
+.hero-nav ul li a {
 	text-decoration: none;
 	color: #F0E441;
 	padding: 8px;
@@ -46,20 +55,40 @@ nav ul li a {
 	display: block;
 }
 
-nav ul li a:hover {
+.hero-nav ul li a:hover {
 	background-color: #F0E441;
 	color: #fff;
 }
 
-nav ul li ul li {
+.hero-nav ul li ul li {
 	display: none;
 }
 
-nav ul li:hover ul li {
+.hero-nav ul li:hover ul li {
 	display: block;
 	background-color: black;
 }
 
+.hero-images>img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.hero-images>.btn {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	border: none;
+	border-radius: 25px;
+	margin: 5px;
+	top: 275px;
+}
+
+.hero-images>#btn2 {
+	position: relative;
+	float: right;
+}
 aside {
 	position: relative;
 	width: 200px;
@@ -90,13 +119,6 @@ h2 {
 
 h3 {
 	color: #F54307;
-}
-
-.hero-container {
-	height: 550px;
-	background-image: url("images/coffeetree.jpg");
-	background-repeat: none;
-	background-size: cover;
 }
 
 .body1 p {
