@@ -30,7 +30,7 @@ header .container {
 
 .body {
 	width: 100%;
-	height: 800px;
+	height: 700px;
 	background-image:url("images/is-coffee-paleo.jpg");
 	background-size:cover;
 	background-repeat: none;
@@ -92,13 +92,13 @@ header .container {
 	float: right;
 }*/
 aside {
-	position: absolute;
-    margin-left: 10px;
+	position: relative;
+    margin-right: 500px;
 	width: 200px;
 	text-align: center;
 	background-color: #F0E441;
 	color: #C40A20;
-	margin-top: 300px auto;
+	margin-top: 220px;
 	padding: 10px;
 	float: right;
 	font-family: times;
@@ -139,7 +139,7 @@ h3 {
 .body1 {
 
 	width: 100%;
-	height: 800px;
+	height: 700px;
 	background-image:url("images/coffeetree.jpg");
 	background-size:cover;
 	background-repeat: none;
@@ -148,7 +148,7 @@ h3 {
 
 .body2 {
 	width: 100%;
-	height: 800px;
+	height: 700px;
 	background-image:url("images/coffee-house.jpg");
 	background-size:cover;
 	background-repeat: none;
