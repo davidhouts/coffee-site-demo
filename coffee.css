@@ -3,18 +3,25 @@ body {
 	/*background-color: #C2785F;*/
 	
 }
-
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
 header .container {
 	background: #AB5538;
 }
 
-.container {
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 15px;
-	padding-left: 15px;
+div {
+	display: block;
+}
 
+h2 {
+	color: #F54307;
+}
+
+h3 {
+	color: #F54307;
 }
 
 .nav {
@@ -26,7 +33,7 @@ header .container {
 	line-height: 20px;
 	background-color: black;
 	opacity: .6;
-	z-index: 1;
+	z-index: 3;
 }
 
 
@@ -65,26 +72,12 @@ header .container {
 	background-color: black;
 }
 
-.hero-images>img {
+/*.hero-images>img {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-}
-
-/*.hero-images>.btn {
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	border: none;
-	border-radius: 25px;
-	margin: 5px;
-	top: 300px;
-}
-
-.hero-images>#btn2 {
-	position: relative;
-	float: right;
 }*/
+
 aside {
 	position: absolute;
     margin-left: 75px;
@@ -106,7 +99,7 @@ aside {
   box-shadow: 2px 2px 4px #888;
 }
 
-.body {
+.section1 {
 	width: 100%;
 	height: 700px;
 	background-image:url("images/is-coffee-paleo.jpg");
@@ -115,46 +108,38 @@ aside {
 	position: relative;
 }
 
-.body .container {
+.section1 .container {
 	box-sizing: border-box;
-	color: rgb(111, 111, 111);
+	/*color: rgb(111, 111, 111);*/
 	display: block;
 	line-height: 20px;
-	margin-left: 247px;
-	margin-right: 247px;
+	margin-left: 247.6px;
+	margin-right: 247.6px;
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 1024px;
 }
 
-.body .box h1 {
-	color: #D4A190;
+.section1 .box h1 {
+	color: #fff;
 }
 
-.body1 h1 {
+.section1 h1 {
 	color: #F54307;
 	margin-top: 0;
 	margin-bottom: 0;
 }
-h2 {
-	color: #F54307;
+
+.section2 {
+	width: 100%;
+	height: 700px;
+	background-image: url("images/london-coffee-festival.jpg");
+	background-size:cover;
+	background-repeat: none;
+	position: relative;
 }
 
-h3 {
-	color: #F54307;
-}
-
-.body1 p {
-	color: #8F2D0D;
-	font-family: Georgia;
-	font-size: 20px;
-}
-
-.body1 p a {
-	color: #A1D490;
-}
-
-.body1 {
+.section3 {
 
 	width: 100%;
 	height: 700px;
@@ -163,11 +148,29 @@ h3 {
 	background-repeat: none;
 	position: relative;
 }
+.section3 p {
+	color: #8F2D0D;
+	font-family: Georgia;
+	font-size: 20px;
+}
 
-.body2 {
+.section3 p a {
+	color: #A1D490;
+}
+
+.section4 {
 	width: 100%;
 	height: 700px;
-	background-image:url("images/coffee-house.jpg");
+	background-image:url("images/morning-coffee.jpg");
+	background-size:cover;
+	background-repeat: none;
+	position: relative;
+}
+
+.section5 {
+	width: 100%;
+	height: 700px;
+	background-image:url("images/coffee-beans.jpg");
 	background-size:cover;
 	background-repeat: none;
 	position: relative;
