@@ -24,13 +24,32 @@ img {
 ul {
 	box-sizing: border-box;
 }
+ul, ol {
+    margin: 20px 0;
+    padding-left: 18px;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.ul_left li {
+    float: left;
+}
+.ul_reset li {
+    margin-left: 0;
+    padding-left: 0;
+}
 p, ul li, ol li {
-	font-size: 16px;
+	font-size: 20px;
 	font-family: Arial;
 	line-height: 1.3;
 }
-/*For demonstration purposes, @media tags have been removed*/
-/*@media (min-width: 1200px)
+:after, :before {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media (min-width: 1200px)
 .container {
 	width: 1024px;
 }
@@ -55,7 +74,7 @@ p, ul li, ol li {
 @media only screen and (min-width: 768px)
 .section1 {
 	padding: 180px 0 90px;
-}*/
+}
 .col-sm-8 {
 	position: relative;
 	min-height: 1px;
@@ -83,6 +102,11 @@ p, ul li, ol li {
 }
 .ul_left li {
 	float: left;
+}
+.ul_set {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .ul_set li {
 	margin-left: 0;
@@ -207,6 +231,7 @@ div {
 	background-repeat: none;
 	position: relative;
 	padding: 180px 0 90px;
+	border-bottom: 1px solid #fff;
 }
 .section1 .box:after {
 	display: block;
@@ -214,18 +239,13 @@ div {
     position: absolute;
     left: calc(100% - 15px);
     top: 0;
-    width: 50vw;
+    width: 17vw;
     height: 100%;
     background: rgba(204, 175, 165, 0.3);
 }
 .box {
-	padding: 20px 40px 20px 0;
+	padding: 10px 40px 20px 2px;
 	background: rgba(204, 175, 165, 0.3);
-}
-.fresh-coffee {
-	color: #fff;
-	margin-top: 0;
-	margin-bottom: 0;
 }
 .box p {
 	color: #fff;
@@ -244,16 +264,58 @@ div {
 	background-size:cover;
 	background-repeat: none;
 	position: relative;
+	border-bottom: 1px solid #fff;
+	padding: 90px;
 }
-
+.section2 .border-block {
+	color: #fff;
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.s2-box {
+	margin-top: 10px;
+}
+.s2-box h1 {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 200;
+}
+.btn--yellow {
+	font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    background: #F0E441;
+    border-radius: 0;
+}
+.btn--arrow {
+	padding-right: 30px;
+}
+.btn {
+	position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.btn--arrow:after {
+	display: block;
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 13px;
+    height: 13px;
+    background-image: url("/images/arrow-right.png") no-repeat;
+}
 .section3 {
-
 	width: 100%;
-	height: 700px;
+	height: 400px;
 	background-image:url("images/coffeetree.jpg");
 	background-size:cover;
 	background-repeat: none;
 	position: relative;
+	border-bottom: 1px solid #fff;
 }
 .section3 p {
 	color: #8F2D0D;
@@ -267,18 +329,85 @@ div {
 
 .section4 {
 	width: 100%;
-	height: 700px;
+	height: 600px;
 	background-image:url("images/morning-coffee.jpg");
 	background-size:cover;
 	background-repeat: none;
 	position: relative;
+	padding-top: 40px;
+	border-bottom: 1px solid #fff;
 }
-
+.section4 .col-sm-8 {
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 85.666667%;
+    float: left;
+}
+.section4 .box:before {
+	display: block;
+    content: "";
+    position: absolute;
+    right: calc(100% - 15px);
+    top: 0;
+    width: 40vw;
+    height: 100%;
+    background: rgba(204, 175, 165, 0.3);
+}
 .section5 {
 	width: 100%;
-	height: 700px;
+	height: 300px;
 	background-image:url("images/coffee-beans.jpg");
 	background-size:cover;
 	background-repeat: none;
 	position: relative;
+	border-bottom: 1px solid #fff;
+}
+.section5 .s5-links {
+	margin: 0 20px;
+}
+.section5 h1 {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 200;
+}
+.section5 .s5-links .s5-box {
+	margin-top: 30px;
+    padding: 0 20px;
+    text-align: center;
+    display: inline-block;
+}
+#footerMain {
+    position: relative;
+    padding: 40px 0 20px;
+    background: #A87F71;
+    font-size: 10px;
+    color: #fff;
+}
+@media only screen and (min-width: 768px)
+#footerContact ul {
+    display: inline-block;
+    float: right;
+    clear: both;
+}
+#footerContact {
+    padding-top: 20px;
+}
+#footerMain ul.ul_left {
+    display: inline-block;
+    vertical-align: middle;
+}
+#footerMain ul.ul_left li {
+    padding: 0 1px;
+}
+footer #footerHolder {
+}
+#footerNav li, #footer_extra li, #footerNav li a, #footer_extra li a {
+    color: #fff;
+    font-size: 10px;
+}
+#social-media ul {
+    width: 100%;
+    margin: 10px 0;
 }
