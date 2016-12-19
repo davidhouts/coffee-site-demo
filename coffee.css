@@ -90,16 +90,12 @@ p, ul li, ol li {
 	min-height: 1px;
 	padding-right: 15px;
 	padding-left: 15px;
-	width: 33.33333333%;
-	float: left;
 }
 .col-md-8 {
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
 	padding-left: 15px;
-	width: 66.66666667%;
-	float: left;
 }
 .container {
 	width: 1024px;
@@ -494,10 +490,18 @@ img {
     width: 33.33333333%;
     float: left;
 }
+.cappuccino .col-md-4 {
+	width: 33.33333333%;
+	float: left;
+}
 @media (min-width: 992px)
 .col-md-8 {
     width: 66.66666667%;
     float: left;
+}
+.cappuccino .col-md-8 {
+	width: 66.66666667%;
+	float: left;
 }
 .row:before {
 	display: table;
